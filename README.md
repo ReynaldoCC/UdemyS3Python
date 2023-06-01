@@ -12,7 +12,7 @@
         - [GNU\\linux set](#gnulinux-set)
         - [Windows set](#windows-set)
         - [both OS](#both-os)
-      - [Last steps](#last-steps)
+        - [Last steps](#last-steps)
     - [Run and having fun](#run-and-having-fun)
 
 --- 
@@ -61,7 +61,7 @@ The content of the file must be the same or very similar in both OS, and should 
 ![Fake AWS Credentials](.assets/AWS-fake-credentials.png)
 Of course using your own real credentials.
 
-#### Last steps 
+##### Last steps 
    - Move to the project directory
 ```bash
    cd <Project Root>
