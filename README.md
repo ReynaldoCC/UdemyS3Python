@@ -19,6 +19,12 @@
 ### About
 This project is based on the project of the free Udemy course [Using AWS S3 with Python](https://www.udemy.com/course/using-aws-s3-with-python/learn/lecture/30459384#overview), That's an introductory course about how to use Python to handle AWS S3 funtionalities.
 
+The .csv files used as sample data in this project were download from the following sources
+   * [AppsLoveWorlds](https://www.appsloveworld.com/sample-csv-file)
+   * [Stats NZ](https://www.stats.govt.nz/large-datasets/csv-files-for-download/)
+   * [Free Test Data](https://freetestdata.com/other-files/csv/#google_vignette)
+   * [Sample Videos](https://sample-videos.com/download-sample-csv.php)
+
 
 ### How to set requirements
 
