@@ -22,5 +22,9 @@ response = client.list_objects(Bucket=DEFAULT_BUCKET_NAME)
 for obj in response.get('Contents'):
     if obj.get('Size') and obj.get('Size') > 0:
         print(f'Downloading file {obj.get("Key")}....')
-        download_files(obj.get("Key"))
+        if '/' in obj.get('Key'):
+            new_name = obj.get('Key').split('/')[-1]
+            download_files(obj.get('Key'), new_name)
+        else:
+            download_files(obj.get('Key'))
         print('Downloaded')
