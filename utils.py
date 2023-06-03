@@ -14,7 +14,7 @@ def show_bucket_list(client):
 def get_object_name_list(client, bucket_name):
     response = client.list_objects(Bucket=bucket_name)
     object_names = []
-    for obj in response.get('Contents'):
+    for obj in response.get('Contents') or []:
         object_names.append(obj.get('Key'))
     return object_names
 
