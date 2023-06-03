@@ -10,3 +10,15 @@ def show_bucket_list(client):
             print(f'Bucket Name: {bucket.get("Name")} created: {bucket.get("CreationDate")} ')
     else:
         print('Connection error')
+
+def get_object_name_list(client, bucket_name):
+    response = client.list_objects(Bucket=bucket_name)
+    object_names = []
+    for obj in response.get('Contents'):
+        object_names.append(obj.get('Key'))
+    return object_names
+
+def show_objects_list_in_bucket(client, bucket_name):
+    names = get_object_name_list(client, bucket_name)
+    for name in names:
+        print(name)
