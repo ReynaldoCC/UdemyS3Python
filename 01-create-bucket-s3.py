@@ -2,7 +2,7 @@ import boto3
 
 import utils
 
-NEW_BUCKET_NAME = 'testing-bucket-sss-new'
+NEW_BUCKET_NAME = 'testing-bucket-sss'
 
 client = boto3.client('s3')
 
